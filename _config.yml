@@ -1,0 +1,59 @@
+﻿# Houdini Documentation Hub
+# Unified GitHub Pages site for all Houdini R&D documentation
+
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+
+title: Houdini Docs
+description: Documentation for Houdini tools, APEX, viewer states, and GPU computing
+
+# Site URL
+url: https://Magzor2k.github.io
+baseurl: /houdini-docs
+
+# Color scheme
+color_scheme: dark
+
+# Enable search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Aux links (top right corner)
+aux_links:
+  "View on GitHub":
+    - "https://github.com/Magzor2k/Houdini_rnd"
+
+# Footer content
+footer_content: "Houdini Documentation for Houdini 21.0"
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Navigation structure
+nav_sort: case_insensitive
+
+# Code syntax highlighting
+highlighter: rouge
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Exclude files from build
+exclude:
+  - "_submissions/"
+  - "CLAUDE.md"
+  - "*.hip"
+  - "*.bgeo"
+  - "*.pyc"
+  - "__pycache__/"
